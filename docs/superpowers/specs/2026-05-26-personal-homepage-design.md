@@ -1,253 +1,253 @@
-# Personal Homepage Design
+# 个人主页设计规格
 
-## Goal
+## 目标
 
-Build a single-page personal homepage for Wang Baozhong that introduces his background, skills, projects, experience, and contact information. The page should feel cold, technical, and precise. Football and motion elements should support memorability, but the site must remain a professional self-introduction page first.
+构建一个单页式个人主页，用于介绍王保忠的教育背景、技术能力、项目经历、实践经历和联系方式。网页整体应呈现冷峻、科技、精确的气质。足球与运动动效用于增强记忆点，但页面的第一定位仍然是专业的个人介绍网页。
 
-## Audience
+## 目标受众
 
-The page is for general personal presentation: classmates, teachers, recruiters, collaborators, and people who want a quick sense of who Wang Baozhong is. It should be useful without needing prior context from the resume.
+该网页面向通用个人展示场景，包括同学、老师、招聘方、合作伙伴，以及希望快速了解王保忠的人。访问者不需要提前阅读简历，也应能通过网页快速理解其技术方向、项目能力与个人特点。
 
-## Source Content
+## 内容来源
 
-The content is derived from the resume at `E:\就业\简历\简历v1_with_6\简历_op_v2.pdf`.
+页面内容基于简历文件：`E:\就业\简历\简历v1_with_6\简历_op_v2.pdf`。
 
-Primary identity:
+主要身份：
 
-- Name: Wang Baozhong / 王保忠
-- Positioning: Surveying Engineering master's student; C++ high-performance systems; GNSS/INS integrated navigation; GIS and deep learning background
-- Contact: 18553498689, turrybaozhongw@163.com
+- 姓名：王保忠 / Wang Baozhong
+- 定位：测绘工程硕士；C++ 高性能系统方向；GNSS/INS 组合导航方向；具备 GIS 与深度学习交叉背景
+- 联系方式：18553498689，turrybaozhongw@163.com
 
-Important background:
+重要背景：
 
-- M.S. in Surveying Engineering, China University of Petroleum (East China), 2024.09-2027.06
-- Joint training at China Research Institute of Radiowave Propagation / CETC 22nd Research Institute, 2025.09-2027.01
-- B.S. in Geographic Information Science, China University of Petroleum (East China), 2020.09-2024.06
-- CPC member, scholarships, excellent graduate student, excellent student cadre, excellent CPC member, excellent undergraduate thesis, and related honors
+- 中国石油大学（华东）测绘工程硕士，2024.09-2027.06
+- 电波传播研究所 / 中电 22 所联合培养，2025.09-2027.01
+- 中国石油大学（华东）地理信息科学学士，2020.09-2024.06
+- 中共党员，曾获综合优秀奖学金、文体奖学金、社会工作奖学金、校优秀研究生、校优秀学生干部、校优秀共产党员、优秀本科论文等荣誉
 
-Core technical themes:
+核心技术主题：
 
-- C++17, STL, Linux system programming
-- TCP/IP, Socket programming, Reactor model, epoll, multithreading, synchronization
-- Data structures including linked list, red-black tree, hash table, array, binary tree, and sorting
-- Memory pool, thread pool, high-performance server architecture
-- MATLAB, Python deep learning environment, BERT/LERT/BiLSTM/CRF, GIS, GNSS navigation
+- C++17、STL、Linux 系统编程
+- TCP/IP、Socket 编程、Reactor 模型、epoll、多线程、线程同步
+- 链表、红黑树、哈希表、数组、二叉树、排序等数据结构
+- 内存池、线程池、高性能服务器架构
+- MATLAB、Python 深度学习环境、BERT/LERT/BiLSTM/CRF、GIS、GNSS 导航
 
-Featured projects:
+重点项目：
 
-- High-performance enterprise KV storage engine
-- Adaptive unscented Kalman filter based on improved Harris Hawks optimization
-- Chinese fine-grained geographic named entity recognition model with representation enhancement
+- 高性能企业级 KV 存储引擎
+- 基于改进哈里斯鹰优化算法的自适应无迹卡尔曼滤波
+- 基于表示增强的中文细粒度地理命名实体识别模型研究
 
-## Experience Shape
+## 页面结构
 
-The homepage will be a single vertical scroll page with five main sections:
+主页采用单页纵向滚动结构，包含五个主要部分：
 
-1. Hero
-2. Capability radar
-3. Core projects
-4. Experience timeline
-5. Contact and closing interaction
+1. 首屏介绍
+2. 能力雷达
+3. 核心项目
+4. 经历时间线
+5. 联系方式与收束交互
 
-Navigation should be fixed or sticky and allow quick jumps between sections. The first screen should immediately communicate name, technical identity, and the cold-tech visual direction.
+导航应采用固定或粘性形式，支持快速跳转到各个区块。首屏需要立即传达姓名、技术身份与冷峻科技感视觉方向。
 
-## Visual Direction
+## 视觉方向
 
-The dominant style is cold high-tech:
+整体风格为冷峻高科技：
 
-- Deep black or near-black background
-- Subtle steel blue, cyan, and white highlights
-- Fine grid lines, scan lines, coordinate ticks, and thin borders
-- Sharp, compact panels rather than rounded decorative cards
-- Minimal color accents from football pitch lines, kept muted and technical
+- 深黑或近黑色背景
+- 克制的钢蓝、青色与白色高光
+- 精细网格线、扫描线、坐标刻度和细边框
+- 使用锋利、紧凑的信息面板，避免过度圆润的装饰卡片
+- 足球场线条可以作为少量强调色，但应保持低饱和、技术化
 
-Football elements must be integrated as abstract motion and field geometry:
+足球元素应以抽象运动轨迹和场地几何的方式融入：
 
-- Low-opacity football pitch lines in the hero background
-- Ball trajectory arcs as particle or line animation
-- A small football object used as an interaction trigger
-- Project and skill visuals may reference scoreboards, tactical boards, or performance metrics, but should not become a sports game interface
+- 首屏背景中使用低透明度足球场线条
+- 使用粒子或线条动画表现足球轨迹
+- 使用一个小型足球元素作为交互触发点
+- 项目区与技能区可以借鉴比分牌、战术板、竞技指标等视觉语言，但不能变成体育游戏界面
 
-The page should not use cute, cartoon, warm, or casual football styling.
+页面不应采用可爱、卡通、暖色或休闲运动风格。
 
-## Section Design
+## 区块设计
 
-### Hero
+### 首屏介绍
 
-Purpose: introduce the person in the first few seconds.
+目的：在几秒内介绍人物身份。
 
-Content:
+内容：
 
-- Large name: 王保忠
-- English/technical line: C++ High-Performance Systems / GNSS Integrated Navigation / GIS + AI
-- Short Chinese summary: 测绘工程硕士，聚焦高性能服务端、组合导航与地理智能。
-- Primary actions: View Projects, Contact
+- 大标题姓名：王保忠
+- 英文/技术定位：C++ High-Performance Systems / GNSS Integrated Navigation / GIS + AI
+- 中文简介：测绘工程硕士，聚焦高性能服务端、组合导航与地理智能。
+- 主要操作：查看项目、联系我
 
-Visual and interaction:
+视觉与交互：
 
-- Full-viewport dark background with animated grid and subtle pitch-line geometry
-- Animated trajectory line that suggests a football shot or navigation path
-- A small interactive football indicator that can be clicked to trigger a brief shot-path animation
-- The next section should be partially hinted below the fold so the page does not feel like a static poster
+- 使用全视口深色背景，加入动态网格与低调球场线条
+- 使用一条动态轨迹线，暗示足球射门轨迹或导航路径
+- 设置一个可点击的小型足球指示元素，点击后触发短暂的射门轨迹动画
+- 首屏底部应露出下一屏内容的一部分，避免页面看起来像静态海报
 
-### Capability Radar
+### 能力雷达
 
-Purpose: summarize skill areas in a scannable way.
+目的：以可快速浏览的方式总结能力结构。
 
-Content groups:
+内容分组：
 
-- Systems: C++17, STL, Linux, multithreading, synchronization
-- Network: TCP/IP, Socket, Reactor, epoll
-- Performance: memory pool, thread pool, high-concurrency architecture
-- Navigation: GNSS/INS, factor graph, Kalman filtering
-- AI/GIS: BERT, LERT, BiLSTM, CRF, GIS, geographic entity recognition
-- Tools: MATLAB, Python deep learning environment
+- 系统能力：C++17、STL、Linux、多线程、线程同步
+- 网络能力：TCP/IP、Socket、Reactor、epoll
+- 性能能力：内存池、线程池、高并发架构
+- 导航能力：GNSS/INS、因子图、卡尔曼滤波
+- AI/GIS 能力：BERT、LERT、BiLSTM、CRF、GIS、地理实体识别
+- 工具能力：MATLAB、Python 深度学习环境
 
-Visual:
+视觉：
 
-- Radar or hexagonal stat panel inspired by athlete performance analysis
-- Compact metric chips for key technologies
-- No exaggerated self-rating numbers unless clearly presented as thematic visualization
+- 使用雷达图或六边形能力面板，借鉴运动员能力分析的表达方式
+- 使用紧凑的技术标签展示关键技术
+- 不使用夸张的自评分数，除非明确作为主题化视觉表达
 
-### Core Projects
+### 核心项目
 
-Purpose: show technical depth through three strong project cards.
+目的：通过三个重点项目展示技术深度。
 
-Project 1: High-performance enterprise KV storage engine
+项目一：高性能企业级 KV 存储引擎
 
-- Emphasize C++17, Reactor, epoll, RESP protocol, memory pool, AOF/RDB persistence, master-slave sync, mmap, eBPF, RDMA
-- Highlight independently implemented red-black tree, hash table, and array
-- Highlight Chunk-based fixed-size memory pool and recovery design
+- 突出 C++17、Reactor、epoll、RESP 协议、内存池、AOF/RDB 持久化、主从同步、mmap、eBPF、RDMA
+- 突出自主实现红黑树、哈希表和数组
+- 突出基于 Chunk 的定长内存池与崩溃恢复流程设计
 
-Project 2: Adaptive UKF based on improved Harris Hawks optimization
+项目二：基于改进哈里斯鹰优化算法的自适应无迹卡尔曼滤波
 
-- Emphasize GNSS/INS loose-coupled navigation error accumulation
-- Highlight MHHO-based adaptive UKF
-- Mention Gaussian mixture and heavy-tailed impulsive noise simulation
-- Mention Monte Carlo experiments and PSINS vehicle measured data validation
+- 突出 GNSS/INS 松组合导航中的误差累积问题
+- 突出基于 MHHO 的自适应 UKF
+- 提及高斯混合噪声与重尾脉冲噪声仿真实验
+- 提及蒙特卡洛实验与 PSINS 车辆实测数据验证
 
-Project 3: Chinese fine-grained geographic named entity recognition
+项目三：中文细粒度地理命名实体识别模型研究
 
-- Emphasize BERT, LERT, BiLSTM, CRF, representation enhancement, Scrapy, jieba, BIOE/BEMS
-- Highlight 2.9 million Weibo data crawl, data cleaning, and 4,000 manually labeled TrafficNER samples
-- Mention SCI submission status carefully as "SCI manuscript under submission" rather than accepted publication
+- 突出 BERT、LERT、BiLSTM、CRF、表示增强、Scrapy、jieba、BIOE/BEMS
+- 突出爬取 290 万条微博数据、数据清洗，以及人工标注 4000 条 TrafficNER 样本
+- SCI 状态应谨慎表述为 “SCI 在投”，不能写成已录用或已发表
 
-Visual:
+视觉：
 
-- Each project appears as a system module panel with tech stack, role, and result
-- Hover states can reveal deeper technical details
-- Small animated circuit/trajectory accents are allowed
+- 每个项目以系统模块面板形式展示，包含技术栈、职责和结果
+- 鼠标悬停或键盘聚焦时可展示更深入的技术细节
+- 可以加入少量电路线条或轨迹线动画作为点缀
 
-### Experience Timeline
+### 经历时间线
 
-Purpose: make education, internship, research training, and leadership easy to understand.
+目的：清晰呈现教育、实习、科研联合培养与学生工作经历。
 
-Content:
+内容：
 
-- 2020.09-2024.06: B.S. Geographic Information Science, China University of Petroleum (East China)
-- 2024.07-2024.09: Software Development Intern, Beijing Yuanwang Jingsheng Technology Development Co., Ltd.
-- 2024.09-2027.06: M.S. Surveying Engineering, China University of Petroleum (East China)
-- 2025.09-2027.01: Integrated Navigation Algorithm Engineer / Joint Training, CETC 22nd Research Institute
-- Campus leadership: Student Union Sports and Culture Department Minister; College Party Branch Secretary
+- 2020.09-2024.06：中国石油大学（华东），地理信息科学学士
+- 2024.07-2024.09：北京远望景盛科技发展有限公司，软件开发实习生
+- 2024.09-2027.06：中国石油大学（华东），测绘工程硕士
+- 2025.09-2027.01：电波传播研究所 / 中电 22 所，组合导航算法工程师 / 联合培养
+- 校园经历：学生会文体部部长、学院党支部书记
 
-Visual:
+视觉：
 
-- Chronological vertical line with coordinate markers
-- Important nodes can use short labels such as "Education", "Research", "Internship", and "Leadership"
-- Student leadership should be included but visually secondary to technical and academic identity
+- 使用带坐标标记的纵向时间线
+- 关键节点使用 “教育”“科研”“实习”“学生工作” 等短标签
+- 学生工作应保留，但视觉权重低于技术与学术身份
 
-### Contact And Closing
+### 联系方式与收束
 
-Purpose: make it easy to reach him and leave a memorable closing impression.
+目的：便于访问者联系，并留下清晰的结束印象。
 
-Content:
+内容：
 
-- Phone: 18553498689
-- Email: turrybaozhongw@163.com
-- Short closing line: 面向复杂系统，追求稳定、精确与高性能。
+- 电话：18553498689
+- 邮箱：turrybaozhongw@163.com
+- 收束文案：面向复杂系统，追求稳定、精确与高性能。
 
-Interaction:
+交互：
 
-- Copy email button
-- Copy phone button
-- Optional final football shot animation that travels along a pitch/navigation path and lands near the contact panel
+- 复制邮箱按钮
+- 复制电话按钮
+- 可选的收尾足球轨迹动画：足球沿球场/导航路径运动，最终落在联系方式面板附近
 
-## Architecture
+## 技术架构
 
-Use a simple static frontend unless later implementation planning finds a strong reason for a framework.
+首版推荐使用简单静态前端，除非后续实施计划发现必须使用框架。
 
-Recommended implementation structure:
+推荐文件结构：
 
-- `index.html`: semantic content and section layout
-- `styles.css`: visual system, responsive layout, animation
-- `script.js`: navigation behavior, football shot animation, copy actions, and small interaction state
+- `index.html`：语义化内容与页面区块结构
+- `styles.css`：视觉系统、响应式布局与动画
+- `script.js`：导航行为、足球轨迹动画、复制操作和少量交互状态
 
-This keeps the first version easy to inspect, deploy, and modify. The project can later migrate to React/Vite if the interaction scope grows.
+这种结构便于检查、部署和后续修改。如果后续交互范围扩大，可以再迁移到 React/Vite。
 
-## Data Flow
+## 数据流
 
-All content can be stored directly in the HTML for the first version. JavaScript should only handle UI behavior:
+首版所有内容可以直接写入 HTML。JavaScript 只负责界面行为：
 
-- Scroll navigation
-- Hero football trajectory animation
-- Project card hover/focus expansion
-- Copy-to-clipboard actions
+- 滚动导航
+- 首屏足球轨迹动画
+- 项目卡片悬停/聚焦展开
+- 复制到剪贴板
 
-No backend, database, or remote API is required.
+不需要后端、数据库或远程 API。
 
-## Responsiveness
+## 响应式要求
 
-The site must work on desktop and mobile:
+页面必须同时适配桌面端和移动端：
 
-- Desktop: immersive hero, side-by-side panels where space allows, denser project information
-- Mobile: stacked sections, compact navigation, readable cards, reduced animation intensity
-- Text must not overlap panels or controls
-- Interactive targets must remain usable on touch screens
+- 桌面端：沉浸式首屏，在空间允许时使用左右并列面板，项目内容可更密集
+- 移动端：区块纵向堆叠，导航更紧凑，卡片可读，动画强度降低
+- 文本不能与面板或控件发生重叠
+- 交互目标在触屏设备上也必须易于点击
 
-## Accessibility
+## 可访问性
 
-- Use semantic headings and section landmarks
-- Maintain strong contrast on dark backgrounds
-- Respect reduced motion preferences by disabling or simplifying non-essential animations
-- Buttons must have accessible labels
-- Copy actions should give visible feedback
+- 使用语义化标题与 section 区块
+- 深色背景下保持足够对比度
+- 遵循 reduced motion 偏好，关闭或简化非必要动画
+- 按钮需要具备可访问标签
+- 复制操作需要给出可见反馈
 
-## Error Handling
+## 错误处理
 
-The page has no backend errors. UI edge cases:
+页面没有后端错误。需要处理的界面边界情况：
 
-- If clipboard copy fails, show a fallback message telling the user to copy manually
-- If JavaScript is disabled, core content remains visible and navigable as a static page
-- Animations should not block reading or navigation
+- 如果剪贴板复制失败，显示提示，让用户手动复制
+- 如果 JavaScript 被禁用，核心内容仍应可见并可浏览
+- 动画不能阻碍阅读或导航
 
-## Testing And Verification
+## 测试与验证
 
-Implementation should be verified with:
+实施完成后应验证：
 
-- Manual desktop viewport check
-- Manual mobile viewport check
-- Browser inspection that all sections are reachable
-- Copy email and phone interactions
-- Reduced-motion behavior
-- Visual check that football elements support the personal homepage rather than overpowering it
+- 桌面端视口人工检查
+- 移动端视口人工检查
+- 浏览器中确认所有区块都可到达
+- 邮箱与电话复制交互
+- reduced motion 行为
+- 视觉检查：足球元素应服务于个人主页表达，而不是喧宾夺主
 
-## Out Of Scope For First Version
+## 首版不包含
 
-- Full football mini-game
-- Backend analytics
-- Blog system
-- Content management system
-- User accounts or comments
-- Downloadable generated resume
-- Real-time data integrations
+- 完整足球小游戏
+- 后端统计分析
+- 博客系统
+- 内容管理系统
+- 用户账号或评论
+- 自动生成可下载简历
+- 实时数据集成
 
-## Success Criteria
+## 成功标准
 
-The first version is successful if:
+首版成功的标准：
 
-- Visitors understand who Wang Baozhong is within the first screen
-- The site clearly presents education, skills, projects, experience, and contact information
-- The cold-tech visual direction feels coherent
-- Football elements are memorable but secondary
-- The page is responsive and usable on desktop and mobile
-- The implementation remains simple enough for future edits
+- 访问者能在首屏理解王保忠是谁
+- 页面清晰展示教育背景、技术能力、项目经历、实践经历和联系方式
+- 冷峻科技感视觉方向统一
+- 足球元素有记忆点，但保持辅助地位
+- 页面在桌面端和移动端都可读、可用
+- 实现结构足够简单，便于后续修改
