@@ -42,9 +42,13 @@ copyButtons.forEach((button) => {
 
     try {
       await navigator.clipboard.writeText(value);
-      status.textContent = `已复制：${value}`;
+      if (status) {
+        status.textContent = `已复制：${value}`;
+      }
     } catch {
-      status.textContent = `复制失败，请手动复制：${value}`;
+      if (status) {
+        status.textContent = `复制失败，请手动复制：${value}`;
+      }
     }
   });
 });

@@ -430,6 +430,7 @@ h3 {
 }
 
 .timeline-list li {
+  position: relative;
   display: grid;
   grid-template-columns: 180px 1fr;
   gap: 28px;
@@ -438,6 +439,13 @@ h3 {
 
 .timeline-list li::before {
   position: absolute;
+  left: -7px;
+  top: 2px;
+  width: 13px;
+  height: 13px;
+  border: 1px solid var(--cyan);
+  background: var(--bg);
+  box-shadow: 0 0 18px rgba(86, 215, 255, 0.62);
   content: "";
 }
 
@@ -452,6 +460,12 @@ h3 {
 
 .contact-panel {
   padding: clamp(26px, 5vw, 58px);
+}
+
+.contact-panel h2 {
+  max-width: 1040px;
+  font-size: clamp(30px, 3.6vw, 46px);
+  line-height: 1.12;
 }
 
 .copy-status {
