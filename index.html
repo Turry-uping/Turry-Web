@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="王保忠的个人主页：测绘工程硕士，聚焦 C++ 高性能系统、GNSS/INS 组合导航与地理智能。"
+    />
+    <title>王保忠 | C++ 高性能系统 / 组合导航 / GIS + AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#hero" aria-label="回到首页">WBZ</a>
+      <nav class="nav-links" aria-label="页面区块">
+        <a href="#capabilities">能力</a>
+        <a href="#projects">项目</a>
+        <a href="#timeline">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="hero" aria-labelledby="hero-title">
+        <div class="pitch-grid" aria-hidden="true">
+          <span class="pitch-line center-circle"></span>
+          <span class="pitch-line penalty-left"></span>
+          <span class="pitch-line penalty-right"></span>
+          <span class="trajectory-line"></span>
+          <button class="football-trigger" type="button" aria-label="触发足球轨迹动画"></button>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">SURVEYING ENGINEERING / SYSTEMS / NAVIGATION</p>
+          <h1 id="hero-title">王保忠</h1>
+          <p class="hero-kicker">C++ High-Performance Systems / GNSS Integrated Navigation / GIS + AI</p>
+          <p class="hero-summary">测绘工程硕士，聚焦高性能服务端、组合导航与地理智能。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">查看项目</a>
+            <a class="button secondary" href="#contact">联系我</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="个人定位摘要">
+          <p class="panel-label">CURRENT STATUS</p>
+          <dl>
+            <div>
+              <dt>学校</dt>
+              <dd>中国石油大学（华东）</dd>
+            </div>
+            <div>
+              <dt>方向</dt>
+              <dd>C++ 高性能系统 / 组合导航</dd>
+            </div>
+            <div>
+              <dt>联合培养</dt>
+              <dd>电波传播研究所 / 中电 22 所</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading">
+          <p class="eyebrow">CAPABILITY RADAR</p>
+          <h2 id="capabilities-title">能力雷达</h2>
+          <p>用系统、网络、性能、导航和 AI/GIS 五条主线概括技术能力。</p>
+        </div>
+
+        <div class="capability-layout">
+          <div class="radar-panel" aria-label="能力雷达视觉面板">
+            <div class="radar-core">WBZ</div>
+            <span style="--i: 0">系统</span>
+            <span style="--i: 1">网络</span>
+            <span style="--i: 2">性能</span>
+            <span style="--i: 3">导航</span>
+            <span style="--i: 4">AI/GIS</span>
+            <span style="--i: 5">工具</span>
+          </div>
+
+          <div class="skill-groups">
+            <article>
+              <h3>系统能力</h3>
+              <p>C++17、STL、Linux、多线程、线程同步</p>
+            </article>
+            <article>
+              <h3>网络能力</h3>
+              <p>TCP/IP、Socket、Reactor、epoll</p>
+            </article>
+            <article>
+              <h3>性能能力</h3>
+              <p>内存池、线程池、高并发架构</p>
+            </article>
+            <article>
+              <h3>导航能力</h3>
+              <p>GNSS/INS、因子图、卡尔曼滤波</p>
+            </article>
+            <article>
+              <h3>AI/GIS 能力</h3>
+              <p>BERT、LERT、BiLSTM、CRF、GIS、地理实体识别</p>
+            </article>
+            <article>
+              <h3>工具能力</h3>
+              <p>MATLAB、Python 深度学习环境</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">CORE PROJECTS</p>
+          <h2 id="projects-title">核心项目</h2>
+          <p>围绕高性能系统、组合导航算法和地理智能模型展示技术深度。</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" tabindex="0">
+            <p class="project-index">PROJECT 01</p>
+            <h3>高性能企业级 KV 存储引擎</h3>
+            <p class="project-stack">C++17 / Reactor / epoll / RESP / Memory Pool / AOF + RDB / eBPF / RDMA</p>
+            <ul>
+              <li>底层网络支持 epoll、io_uring 与 NtyCo 协程切换。</li>
+              <li>自主实现红黑树、哈希表和数组等核心数据结构。</li>
+              <li>设计基于 Chunk 的定长内存池，降低高频增删下的碎片影响。</li>
+              <li>结合 RDB 全量快照与 AOF 增量日志设计崩溃恢复流程。</li>
+            </ul>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <p class="project-index">PROJECT 02</p>
+            <h3>基于改进哈里斯鹰优化算法的自适应无迹卡尔曼滤波</h3>
+            <p class="project-stack">GNSS/INS / MHHO / UKF / Monte Carlo / PSINS</p>
+            <ul>
+              <li>面向复杂环境下 GNSS/INS 松组合导航误差累积问题。</li>
+              <li>提出并实现基于 MHHO 的自适应 UKF 算法。</li>
+              <li>完成高斯混合噪声与重尾脉冲噪声仿真实验。</li>
+              <li>通过 50 次蒙特卡洛实验与 PSINS 车辆实测数据验证鲁棒性。</li>
+            </ul>
+          </article>
+
+          <article class="project-card" tabindex="0">
+            <p class="project-index">PROJECT 03</p>
+            <h3>中文细粒度地理命名实体识别模型研究</h3>
+            <p class="project-stack">BERT / LERT / BiLSTM / CRF / Scrapy / jieba / BIOE + BEMS</p>
+            <ul>
+              <li>爬取 290 万条微博数据，并围绕交通事故文本进行筛选清洗。</li>
+              <li>人工标注 4000 条 TrafficNER 样本。</li>
+              <li>实现词汇边界、字形信息和相对位置编码等表示增强模块。</li>
+              <li>论文状态谨慎表述为 SCI 在投。</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline" id="timeline" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">TIMELINE</p>
+          <h2 id="timeline-title">经历时间线</h2>
+          <p>以坐标节点方式串联教育、实习、科研联合培养与学生工作。</p>
+        </div>
+
+        <ol class="timeline-list">
+          <li>
+            <time datetime="2020-09">2020.09-2024.06</time>
+            <div>
+              <p class="tag">教育</p>
+              <h3>中国石油大学（华东）</h3>
+              <p>地理信息科学学士，排名前 30%。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2024-07">2024.07-2024.09</time>
+            <div>
+              <p class="tag">实习</p>
+              <h3>北京远望景盛科技发展有限公司</h3>
+              <p>软件开发实习生，参与信号处理与反演算法集成开发。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2024-09">2024.09-2027.06</time>
+            <div>
+              <p class="tag">教育</p>
+              <h3>中国石油大学（华东）</h3>
+              <p>测绘工程硕士，排名前 20%。</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2025-09">2025.09-2027.01</time>
+            <div>
+              <p class="tag">科研</p>
+              <h3>电波传播研究所 / 中电 22 所</h3>
+              <p>组合导航算法工程师 / 联合培养，研究 GNSS/INS/相机多源融合导航定位系统。</p>
+            </div>
+          </li>
+          <li>
+            <time>校园经历</time>
+            <div>
+              <p class="tag">学生工作</p>
+              <h3>文体活动与党支部工作</h3>
+              <p>曾任学生会文体部部长、学院党支部书记，组织多项院级活动与党建品牌项目。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <p class="eyebrow">CONTACT</p>
+          <h2 id="contact-title">面向复杂系统，追求稳定、精确与高性能。</h2>
+          <div class="contact-actions">
+            <button class="copy-button" type="button" data-copy="turrybaozhongw@163.com">复制邮箱</button>
+            <button class="copy-button" type="button" data-copy="18553498689">复制电话</button>
+          </div>
+          <p class="copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
