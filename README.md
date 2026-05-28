@@ -6,6 +6,16 @@
 
 直接在浏览器打开 `index.html` 即可预览。
 
+也可以在 VSCode 中运行：
+
+1. 打开项目文件夹 `C:\Users\Administrator\Documents\个人网页`
+2. 按 `Ctrl+Shift+P`
+3. 输入并选择 `Tasks: Run Task`
+4. 选择 `启动个人网站本地预览`
+5. 访问 `http://127.0.0.1:5500/index.html`
+
+如果你安装了 VSCode 的 Live Server 扩展，也可以右键 `index.html`，选择 `Open with Live Server`。
+
 ## 项目文件
 
 - `index.html`：页面内容与结构
