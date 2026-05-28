@@ -20,6 +20,18 @@
 
 - `index.html`：页面内容与结构
 - `styles.css`：视觉系统、布局与动画
-- `script.js`：导航、足球轨迹与复制交互
+- `script.js`：导航、足球轨迹、能力扫描、项目筛选与复制交互
+- `site-core.mjs`：可测试的互动状态计算逻辑
+- `tests/site-core.test.mjs`：互动逻辑测试
 - `docs/superpowers/specs/2026-05-26-personal-homepage-design.md`：设计规格
 - `docs/superpowers/plans/2026-05-26-personal-homepage.md`：开发计划
+
+## 验证
+
+运行互动逻辑测试：
+
+```bash
+node tests/site-core.test.mjs
+```
+
+如果系统里的 `node` 无法访问，可以使用 Codex 工作区自带 Node 运行同一个测试。
