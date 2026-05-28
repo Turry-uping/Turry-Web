@@ -5,73 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="王保忠的个人主页：测绘工程硕士，聚焦 C++ 高性能系统、GNSS/INS 组合导航与地理智能。"
+      content="王保忠的互动个人网站：测绘工程硕士，聚焦 C++ 高性能系统、GNSS/INS 组合导航与地理智能。"
     />
-    <title>王保忠 | C++ 高性能系统 / 组合导航 / GIS + AI</title>
+    <title>王保忠 | 互动个人网站</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
+    <div class="cursor-aura" aria-hidden="true"></div>
+    <div class="scroll-meter" aria-hidden="true"><span></span></div>
 
     <header class="site-header" aria-label="主导航">
-      <a class="brand" href="#hero" aria-label="回到首页">WBZ</a>
+      <a class="brand" href="#hero" aria-label="回到首页">
+        <span>WBZ</span>
+        <small>ONLINE</small>
+      </a>
       <nav class="nav-links" aria-label="页面区块">
         <a href="#capabilities">能力</a>
         <a href="#projects">项目</a>
         <a href="#timeline">经历</a>
         <a href="#contact">联系</a>
       </nav>
+      <button class="system-toggle" type="button" aria-pressed="false">沉浸模式</button>
     </header>
 
+    <aside class="mission-hud" aria-label="浏览状态">
+      <p class="hud-label">VISITOR HUD</p>
+      <div class="hud-row">
+        <span>当前区块</span>
+        <strong data-hud-section>首屏</strong>
+      </div>
+      <div class="hud-row">
+        <span>互动能量</span>
+        <strong data-hud-energy>00%</strong>
+      </div>
+      <div class="hud-track" aria-hidden="true"><span data-energy-bar></span></div>
+      <p class="hud-log" data-hud-log>系统待机，点击足球或启动扫描。</p>
+    </aside>
+
     <main id="main">
-      <section class="hero section" id="hero" aria-labelledby="hero-title">
+      <section class="hero section reveal-zone" id="hero" aria-labelledby="hero-title" data-section-name="首屏">
         <div class="pitch-grid">
           <span class="pitch-line center-circle" aria-hidden="true"></span>
           <span class="pitch-line penalty-left" aria-hidden="true"></span>
           <span class="pitch-line penalty-right" aria-hidden="true"></span>
           <span class="trajectory-line" aria-hidden="true"></span>
-          <button class="football-trigger" type="button" aria-label="触发足球轨迹动画"></button>
+          <button class="football-trigger" type="button" aria-label="触发足球轨迹动画">
+            <span class="football-core"></span>
+          </button>
         </div>
 
         <div class="hero-content">
-          <p class="eyebrow">SURVEYING ENGINEERING / SYSTEMS / NAVIGATION</p>
+          <p class="eyebrow">INTERACTIVE PROFILE / SYSTEMS / NAVIGATION</p>
           <h1 id="hero-title">王保忠</h1>
           <p class="hero-kicker">C++ High-Performance Systems / GNSS Integrated Navigation / GIS + AI</p>
-          <p class="hero-summary">测绘工程硕士，聚焦高性能服务端、组合导航与地理智能。</p>
+          <p class="hero-summary">测绘工程硕士，聚焦高性能服务端、组合导航与地理智能。这个网站不是简历截图，而是一套可以探索的个人档案系统。</p>
           <div class="hero-actions">
-            <a class="button primary" href="#projects">查看项目</a>
-            <a class="button secondary" href="#contact">联系我</a>
+            <a class="button primary" href="#projects">进入项目战术板</a>
+            <button class="button secondary scan-launch" type="button">启动能力扫描</button>
           </div>
         </div>
 
-        <aside class="hero-panel" aria-label="个人定位摘要">
-          <p class="panel-label">CURRENT STATUS</p>
+        <aside class="hero-panel console-panel" aria-label="个人定位摘要">
+          <p class="panel-label">LIVE PROFILE</p>
           <dl>
             <div>
-              <dt>学校</dt>
-              <dd>中国石油大学（华东）</dd>
+              <dt>身份</dt>
+              <dd>测绘工程硕士 / 中共党员</dd>
             </div>
             <div>
-              <dt>方向</dt>
-              <dd>C++ 高性能系统 / 组合导航</dd>
+              <dt>主攻</dt>
+              <dd>C++ 高性能系统 / GNSS 组合导航</dd>
             </div>
             <div>
               <dt>联合培养</dt>
               <dd>电波传播研究所 / 中电 22 所</dd>
             </div>
           </dl>
+          <div class="combo-readout">
+            <span>SHOT COMBO</span>
+            <strong data-shot-combo>0</strong>
+          </div>
         </aside>
       </section>
 
-      <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
+      <section class="section capabilities reveal-zone" id="capabilities" aria-labelledby="capabilities-title" data-section-name="能力">
         <div class="section-heading">
-          <p class="eyebrow">CAPABILITY RADAR</p>
-          <h2 id="capabilities-title">能力雷达</h2>
-          <p>用系统、网络、性能、导航和 AI/GIS 五条主线概括技术能力。</p>
+          <p class="eyebrow">CAPABILITY SCANNER</p>
+          <h2 id="capabilities-title">能力扫描系统</h2>
+          <p>点击扫描按钮，系统会按技术主线逐项点亮能力模块，像读取一名工程型球员的技术面板。</p>
+        </div>
+
+        <div class="command-strip" aria-label="能力扫描控制">
+          <button class="command-button scan-launch" type="button">自动扫描</button>
+          <button class="command-button" type="button" data-filter-jump="cpp">定位 C++</button>
+          <button class="command-button" type="button" data-filter-jump="navigation">定位导航</button>
+          <button class="command-button" type="button" data-filter-jump="ai">定位 AI/GIS</button>
         </div>
 
         <div class="capability-layout">
           <div class="radar-panel" aria-label="能力雷达视觉面板">
+            <div class="radar-sweep" aria-hidden="true"></div>
             <div class="radar-core">WBZ</div>
             <span style="--i: 0">系统</span>
             <span style="--i: 1">网络</span>
@@ -82,89 +116,117 @@
           </div>
 
           <div class="skill-groups">
-            <article>
+            <article class="skill-card" data-skill="cpp">
+              <span class="skill-index">01</span>
               <h3>系统能力</h3>
               <p>C++17、STL、Linux、多线程、线程同步</p>
+              <meter min="0" max="100" value="88">88%</meter>
             </article>
-            <article>
+            <article class="skill-card" data-skill="network">
+              <span class="skill-index">02</span>
               <h3>网络能力</h3>
               <p>TCP/IP、Socket、Reactor、epoll</p>
+              <meter min="0" max="100" value="84">84%</meter>
             </article>
-            <article>
+            <article class="skill-card" data-skill="performance">
+              <span class="skill-index">03</span>
               <h3>性能能力</h3>
               <p>内存池、线程池、高并发架构</p>
+              <meter min="0" max="100" value="86">86%</meter>
             </article>
-            <article>
+            <article class="skill-card" data-skill="navigation">
+              <span class="skill-index">04</span>
               <h3>导航能力</h3>
               <p>GNSS/INS、因子图、卡尔曼滤波</p>
+              <meter min="0" max="100" value="82">82%</meter>
             </article>
-            <article>
+            <article class="skill-card" data-skill="ai">
+              <span class="skill-index">05</span>
               <h3>AI/GIS 能力</h3>
               <p>BERT、LERT、BiLSTM、CRF、GIS、地理实体识别</p>
+              <meter min="0" max="100" value="80">80%</meter>
             </article>
-            <article>
+            <article class="skill-card" data-skill="tooling">
+              <span class="skill-index">06</span>
               <h3>工具能力</h3>
-              <p>MATLAB、Python 深度学习环境</p>
+              <p>MATLAB、Python 深度学习环境、Scrapy、jieba</p>
+              <meter min="0" max="100" value="78">78%</meter>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <section class="section projects reveal-zone" id="projects" aria-labelledby="projects-title" data-section-name="项目">
         <div class="section-heading">
-          <p class="eyebrow">CORE PROJECTS</p>
-          <h2 id="projects-title">核心项目</h2>
-          <p>围绕高性能系统、组合导航算法和地理智能模型展示技术深度。</p>
+          <p class="eyebrow">TACTICAL PROJECT BOARD</p>
+          <h2 id="projects-title">项目战术板</h2>
+          <p>点击技术标签筛选项目，点击项目卡片展开详情。这里不是平铺经历，而是把项目当作战术模块来读。</p>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card" tabindex="0">
-            <p class="project-index">PROJECT 01</p>
-            <h3>高性能企业级 KV 存储引擎</h3>
-            <p class="project-stack">C++17 / Reactor / epoll / RESP / Memory Pool / AOF + RDB / eBPF / RDMA</p>
-            <ul>
-              <li>底层网络支持 epoll、io_uring 与 NtyCo 协程切换。</li>
-              <li>自主实现红黑树、哈希表和数组等核心数据结构。</li>
-              <li>设计基于 Chunk 的定长内存池，降低高频增删下的碎片影响。</li>
-              <li>结合 RDB 全量快照与 AOF 增量日志设计崩溃恢复流程。</li>
-            </ul>
-          </article>
+        <div class="filter-board" aria-label="项目技术筛选">
+          <button class="filter-chip is-active" type="button" data-filter="all">全部</button>
+          <button class="filter-chip" type="button" data-filter="cpp">C++</button>
+          <button class="filter-chip" type="button" data-filter="performance">高性能</button>
+          <button class="filter-chip" type="button" data-filter="navigation">组合导航</button>
+          <button class="filter-chip" type="button" data-filter="ai">AI/GIS</button>
+        </div>
 
-          <article class="project-card" tabindex="0">
-            <p class="project-index">PROJECT 02</p>
-            <h3>基于改进哈里斯鹰优化算法的自适应无迹卡尔曼滤波</h3>
-            <p class="project-stack">GNSS/INS / MHHO / UKF / Monte Carlo / PSINS</p>
-            <ul>
-              <li>面向复杂环境下 GNSS/INS 松组合导航误差累积问题。</li>
-              <li>提出并实现基于 MHHO 的自适应 UKF 算法。</li>
-              <li>完成高斯混合噪声与重尾脉冲噪声仿真实验。</li>
-              <li>通过 50 次蒙特卡洛实验与 PSINS 车辆实测数据验证鲁棒性。</li>
-            </ul>
-          </article>
+        <div class="project-stage">
+          <div class="project-grid" data-project-grid>
+            <article class="project-card" tabindex="0" data-project="kv" data-tech="cpp linux performance network" aria-label="展开高性能企业级 KV 存储引擎">
+              <p class="project-index">PROJECT 01</p>
+              <h3>高性能企业级 KV 存储引擎</h3>
+              <p class="project-stack">C++17 / Reactor / epoll / RESP / Memory Pool / AOF + RDB / eBPF / RDMA</p>
+              <ul>
+                <li>网络层支持多种高并发模型切换。</li>
+                <li>自主实现红黑树、哈希表和数组。</li>
+                <li>设计定长内存池与崩溃恢复流程。</li>
+              </ul>
+              <button class="mini-action" type="button">展开模块</button>
+            </article>
 
-          <article class="project-card" tabindex="0">
-            <p class="project-index">PROJECT 03</p>
-            <h3>中文细粒度地理命名实体识别模型研究</h3>
-            <p class="project-stack">BERT / LERT / BiLSTM / CRF / Scrapy / jieba / BIOE + BEMS</p>
-            <ul>
-              <li>爬取 290 万条微博数据，并围绕交通事故文本进行筛选清洗。</li>
-              <li>人工标注 4000 条 TrafficNER 样本。</li>
-              <li>实现词汇边界、字形信息和相对位置编码等表示增强模块。</li>
-              <li>论文状态谨慎表述为 SCI 在投。</li>
-            </ul>
-          </article>
+            <article class="project-card" tabindex="0" data-project="nav" data-tech="navigation matlab performance" aria-label="展开自适应无迹卡尔曼滤波">
+              <p class="project-index">PROJECT 02</p>
+              <h3>自适应无迹卡尔曼滤波</h3>
+              <p class="project-stack">GNSS/INS / MHHO / UKF / Monte Carlo / PSINS</p>
+              <ul>
+                <li>面向复杂环境下导航误差累积。</li>
+                <li>实现基于 MHHO 的自适应 UKF。</li>
+                <li>结合仿真与实测数据验证鲁棒性。</li>
+              </ul>
+              <button class="mini-action" type="button">展开模块</button>
+            </article>
+
+            <article class="project-card" tabindex="0" data-project="ner" data-tech="ai gis python" aria-label="展开地理命名实体识别模型">
+              <p class="project-index">PROJECT 03</p>
+              <h3>中文细粒度地理命名实体识别</h3>
+              <p class="project-stack">BERT / LERT / BiLSTM / CRF / Scrapy / jieba / BIOE + BEMS</p>
+              <ul>
+                <li>爬取 290 万条微博数据。</li>
+                <li>人工标注 4000 条 TrafficNER 样本。</li>
+                <li>实现表示增强模块，论文 SCI 在投。</li>
+              </ul>
+              <button class="mini-action" type="button">展开模块</button>
+            </article>
+          </div>
+
+          <aside class="project-detail" aria-live="polite" data-project-detail>
+            <p class="panel-label">SELECTED MODULE</p>
+            <h3>点击一个项目模块</h3>
+            <p>这里会显示项目职责、技术路线和亮点。访客不需要一次读完所有内容，可以像操作控制台一样逐步探索。</p>
+          </aside>
         </div>
       </section>
 
-      <section class="section timeline" id="timeline" aria-labelledby="timeline-title">
+      <section class="section timeline reveal-zone" id="timeline" aria-labelledby="timeline-title" data-section-name="经历">
         <div class="section-heading">
-          <p class="eyebrow">TIMELINE</p>
-          <h2 id="timeline-title">经历时间线</h2>
-          <p>以坐标节点方式串联教育、实习、科研联合培养与学生工作。</p>
+          <p class="eyebrow">ROUTE TIMELINE</p>
+          <h2 id="timeline-title">经历路线</h2>
+          <p>滚动到这里时节点会逐个点亮，像导航轨迹一样串联教育、实习、科研联合培养与学生工作。</p>
         </div>
 
         <ol class="timeline-list">
-          <li>
+          <li class="timeline-node">
             <time datetime="2020-09">2020.09-2024.06</time>
             <div>
               <p class="tag">教育</p>
@@ -172,7 +234,7 @@
               <p>地理信息科学学士，排名前 30%。</p>
             </div>
           </li>
-          <li>
+          <li class="timeline-node">
             <time datetime="2024-07">2024.07-2024.09</time>
             <div>
               <p class="tag">实习</p>
@@ -180,7 +242,7 @@
               <p>软件开发实习生，参与信号处理与反演算法集成开发。</p>
             </div>
           </li>
-          <li>
+          <li class="timeline-node">
             <time datetime="2024-09">2024.09-2027.06</time>
             <div>
               <p class="tag">教育</p>
@@ -188,7 +250,7 @@
               <p>测绘工程硕士，排名前 20%。</p>
             </div>
           </li>
-          <li>
+          <li class="timeline-node">
             <time datetime="2025-09">2025.09-2027.01</time>
             <div>
               <p class="tag">科研</p>
@@ -196,7 +258,7 @@
               <p>组合导航算法工程师 / 联合培养，研究 GNSS/INS/相机多源融合导航定位系统。</p>
             </div>
           </li>
-          <li>
+          <li class="timeline-node">
             <time>校园经历</time>
             <div>
               <p class="tag">学生工作</p>
@@ -207,10 +269,11 @@
         </ol>
       </section>
 
-      <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <section class="section contact reveal-zone" id="contact" aria-labelledby="contact-title" data-section-name="联系">
         <div class="contact-panel">
-          <p class="eyebrow">CONTACT</p>
+          <p class="eyebrow">FINAL PASS</p>
           <h2 id="contact-title">面向复杂系统，追求稳定、精确与高性能。</h2>
+          <p>如果你希望进一步了解项目细节、算法方向或工程实现，可以直接联系我。</p>
           <div class="contact-actions">
             <button class="copy-button" type="button" data-copy="turrybaozhongw@163.com">复制邮箱</button>
             <button class="copy-button" type="button" data-copy="18553498689">复制电话</button>
@@ -220,6 +283,6 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
